@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooper's Guest Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #f39c12;
+            --secondary: #fdf5e6;
+            --text: #5d4037;
+            --accent: #e67e22;
+            --danger: #e74c3c;
+            --emergency-bg: #fff0f0;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+        }
+
+        /* Photo Styling */
+        .profile-pic {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover; /* This crops the image to fill the circle perfectly */
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--accent);
+            border-bottom: 2px dashed var(--primary);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .grid { grid-template-columns: 1fr; }
+        }
+
+        .precaution-card {
+            border-left: 5px solid var(--danger);
+            background-color: #fff5f5;
+        }
+
+        .emergency-card {
+            background-color: var(--emergency-bg);
+            border: 2px solid var(--danger);
+        }
+
+        .emergency-link {
+            color: var(--danger);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .emergency-link:hover { text-decoration: underline; }
+
+        .emoji { font-size: 1.5rem; vertical-align: middle; }
+
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            padding: 2rem;
+            opacity: 0.7;
+        }
+
+        ul { list-style-type: '🐾 '; padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="cooper.png" alt="Cooper the Goldendoodle" class="profile-pic">
+    <h1>Hi, I'm Cooper! 🐾</h1>
+    <p>Welcome to my official sleepover guide!</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <p>Thanks for hanging out with me while my paw-rents are away. I'm a Goldendoodle who loves snacks, naps, and making new friends. Here’s how to make sure we have the best time ever!</p>
+    </section>
+
+    <div class="card emergency-card">
+        <h3><span class="emoji">🚨</span> Emergency Info</h3>
+        <p>If I get lost or don't feel well, here is the important stuff:</p>
+        <ul>
+            <li><strong>I am Microchipped!</strong> My info is registered to my parents.</li>
+            <li><strong>My Vet:</strong> <a href="https://juanitabayvet.com/" target="_blank" class="emergency-link">Juanita Bay Veterinary Hospital</a></li>
+            <li><strong>Phone:</strong> <a href="tel:4258238411" class="emergency-link">(425) 823-8411</a></li>
+            <li><strong>Address:</strong> 11416 98th Ave NE, Kirkland, WA 98033</li>
+        </ul>
+    </div>
+
+    <h2>The Core Guidelines</h2>
+    <div class="grid">
+        <div class="card">
+            <h3><span class="emoji">🥣</span> Meal Time</h3>
+            <ul>
+                <li><strong>124g</strong> of kibble (Morning & Evening).</li>
+                <li>Add a <strong>splash of goat milk</strong> from the fridge!</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3><span class="emoji">🦷</span> Bedtime Routine</h3>
+            <ul>
+                <li>A good <strong>tooth brushing</strong> at night.</li>
+                <li>Fresh <strong>water</strong> (I love a night-time drink!)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3><span class="emoji">🌳</span> The Potty Schedule</h3>
+        <ul>
+            <li><strong>Morning:</strong> Pee + Poo 💩</li>
+            <li><strong>Afternoon:</strong> Pee + Poo 💩</li>
+            <li><strong>Evening:</strong> Just a quick pee before bed! 💦</li>
+        </ul>
+    </div>
+
+    <h2>Cooper’s Pro-Tips</h2>
+    <div class="card">
+        <ul>
+            <li><strong>Treats on Walks:</strong> I’m a better walker if you have snacks!</li>
+            <li><strong>My Squad:</strong> I love smaller dogs and I <em>especially</em> love other Doodles.</li>
+        </ul>
+    </div>
+
+    <h2>Important Precautions</h2>
+    <div class="card precaution-card">
+        <h3><span class="emoji">⚠️</span> It’s not personal, but...</h3>
+        <ul>
+            <li><strong>Personal Space:</strong> I’m not a fan of large dogs, Frenchies, Pugs, or little kids.</li>
+            <li><strong>"Finders Keepers":</strong> I get <strong>territorial</strong> with my toys, sticks, balls, or even cool grass on the ground.</li>
+            <li><strong>Safety:</strong> If I'm guarding something, please don't try to take it. I might get aggressive or make biting motions. Just give me space!</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Made with ❤️ for Cooper | cooper.jasonshao.com</p>
+    </div>
+</div>
+
+</body>
+</html>
