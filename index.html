@@ -36,12 +36,11 @@
             border-bottom-right-radius: 50% 20px;
         }
 
-        /* Photo Styling */
         .profile-pic {
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            object-fit: cover; /* This crops the image to fill the circle perfectly */
+            object-fit: cover;
             border: 5px solid white;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             margin-bottom: 1rem;
@@ -100,8 +99,6 @@
             text-decoration: none;
         }
 
-        .emergency-link:hover { text-decoration: underline; }
-
         .emoji { font-size: 1.5rem; vertical-align: middle; }
 
         .footer {
@@ -113,6 +110,8 @@
 
         ul { list-style-type: '🐾 '; padding-left: 1.5rem; }
         li { margin-bottom: 0.5rem; }
+        
+        .sub-list { margin-top: 10px; list-style-type: '👉 '; }
     </style>
 </head>
 <body>
@@ -130,12 +129,10 @@
 
     <div class="card emergency-card">
         <h3><span class="emoji">🚨</span> Emergency Info</h3>
-        <p>If I get lost or don't feel well, here is the important stuff:</p>
         <ul>
-            <li><strong>I am Microchipped!</strong> My info is registered to my parents.</li>
-            <li><strong>My Vet:</strong> <a href="https://juanitabayvet.com/" target="_blank" class="emergency-link">Juanita Bay Veterinary Hospital</a></li>
+            <li><strong>I am Microchipped!</strong> Info is registered to my parents.</li>
+            <li><strong>My Vet:</strong> <a href="https://juanitabayvet.com/" target="_blank" class="emergency-link">Juanita Bay Veterinary Hospital</a> (or any nearby vet!)</li>
             <li><strong>Phone:</strong> <a href="tel:4258238411" class="emergency-link">(425) 823-8411</a></li>
-            <li><strong>Address:</strong> 11416 98th Ave NE, Kirkland, WA 98033</li>
         </ul>
     </div>
 
@@ -144,33 +141,48 @@
         <div class="card">
             <h3><span class="emoji">🥣</span> Meal Time</h3>
             <ul>
-                <li><strong>124g</strong> of kibble (Morning & Evening).</li>
+                <li><strong>130g</strong> of kibble / meal (Morning & Evening).</li>
                 <li>Add a <strong>splash of goat milk</strong> from the fridge!</li>
+                <li><strong>Sensitive Stomach:</strong> Please stick to my usual food and treats. No human food, please! 🚫🍔</li>
             </ul>
         </div>
         <div class="card">
             <h3><span class="emoji">🦷</span> Bedtime Routine</h3>
             <ul>
                 <li>A good <strong>tooth brushing</strong> at night.</li>
-                <li>Fresh <strong>water</strong> (I love a night-time drink!)</li>
+                <li>Fresh <strong>water</strong> (I love a night-time drink!) 👅</li>
+                <li>I might join you on the bed at night 💤</li>
             </ul>
         </div>
     </div>
 
     <div class="card">
-        <h3><span class="emoji">🌳</span> The Potty Schedule</h3>
+        <h3><span class="emoji">🌳</span> Bathroom & House Rules</h3>
+        <p>Don't sweat the clock! I’m pretty flexible, but here is my usual flow:</p>
         <ul>
-            <li><strong>Morning:</strong> Pee + Poo 💩</li>
-            <li><strong>Afternoon:</strong> Pee + Poo 💩</li>
-            <li><strong>Evening:</strong> Just a quick pee before bed! 💦</li>
+            <li><strong>The Routine:</strong> Morning/Afternoon (Pee + Poo 💩), Evening (Quick pee before bed 💦).</li>
+            <li><strong>Upset Stomach:</strong> If I have an "oopsie" inside, the <strong>enzymatic cleaner</strong> is under the sink in the 1st-floor bathroom.</li>
+            <li><strong>Extra Gear:</strong> Wipes, poo bags, and towels are all ready for you to use!</li>
         </ul>
     </div>
 
     <h2>Cooper’s Pro-Tips</h2>
     <div class="card">
         <ul>
-            <li><strong>Treats on Walks:</strong> I’m a better walker if you have snacks!</li>
-            <li><strong>My Squad:</strong> I love smaller dogs and I <em>especially</em> love other Doodles.</li>
+            <li><strong>"Off-Leash" is a No-Go:</strong> I need to stay on my leash at all times when we're outside. 🦮</li>
+            <li><strong>Meeting Humans:</strong> I can be a little shy! If people want to say hi, let them know I prefer <strong>pets under the chin</strong> rather than reaching over my head.</li>
+            <li><strong>Socializing:</strong> 
+                <ul class="sub-list">
+                    <li>If other dogs walk by, tell me to <strong>"leave it"</strong> to help me stay focused on you.</li>
+                    <li>If I seem like I want to say hi, please <strong>ask the owner first</strong>. Sometimes I’m great, but I can get a little reactive!</li>
+                </ul>
+            </li>
+            <li><strong>The "Statue" Treatment:</strong> If I find a smell I can't leave and stop moving:
+                <ul class="sub-list">
+                    <li>Try <strong>bending down to my level</strong> to get my attention. 🐾</li>
+                    <li>A tiny <strong>treat</strong> offered at my level usually restarts my engines! 🦴</li>
+                </ul>
+            </li>
         </ul>
     </div>
 
@@ -178,9 +190,10 @@
     <div class="card precaution-card">
         <h3><span class="emoji">⚠️</span> It’s not personal, but...</h3>
         <ul>
-            <li><strong>Personal Space:</strong> I’m not a fan of large dogs, Frenchies, Pugs, or little kids.</li>
-            <li><strong>"Finders Keepers":</strong> I get <strong>territorial</strong> with my toys, sticks, balls, or even cool grass on the ground.</li>
-            <li><strong>Safety:</strong> If I'm guarding something, please don't try to take it. I might get aggressive or make biting motions. Just give me space!</li>
+            <li><strong>Personal Space:</strong> I’m not a fan of large dogs, Frenchies, or Pugs.</li>
+            <li><strong>Tiny Humans:</strong> I generally <strong>don’t like kids</strong> saying hi to me outside, so let's keep our distance!</li>
+            <li><strong>"Finders Keepers":</strong> I get <strong>territorial</strong> with my toys, sticks, balls, or even cool grass.</li>
+            <li><strong>Safety:</strong> If I'm guarding something, please don't try to take it! I might make biting motions. Just give me space.</li>
         </ul>
     </div>
 
